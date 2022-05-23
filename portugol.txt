@@ -1,0 +1,25 @@
+Início
+	
+	int blocoQ[] = {35,4,22,20,36,30}
+	int escolha
+	double media, soma;
+	
+
+	ler escolha
+	exibir blocoQ[escolha]
+	
+	PARA(i = 0; i<6; i++) 
+		soma = soma + blocoQ[i]
+	FIMPARA
+	
+	media = soma / 6
+	exibir media
+
+	
+	PARA(i = 0; i<6; i++)	
+		SE blocoQ[i] > media FAÇA
+			exibir blocoQ[i]
+		FIMSE	
+	FIMPARA
+	
+Fim
