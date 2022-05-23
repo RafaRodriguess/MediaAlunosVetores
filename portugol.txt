@@ -1,0 +1,32 @@
+Início
+
+	int blocoQ[] = new int[6]
+	double media
+	double soma
+	
+	PARA(i = 0; i<6; i++) 
+		escreva 'Digite a quantidade de alunos da sala'
+		ler blocoQ[i]
+	FIMPARA
+
+	PARA(i = 0; i<6; i++) 
+		soma = soma + blocoQ[i]
+	FIMPARA
+	
+	media = soma/6
+
+	PARA(i = 0; i<6; i++) 
+	   SE blocoQ[i] > media FAÇA
+		escreva 'salas maior que a media'
+		Exibir blocoQ[i]
+	   FIMSE
+	FIMPARA
+
+	PARA(i = 0; i<6; i++) 
+	   SE blocoQ[i] < media FAÇA
+		escreva 'salas menor que a media'
+		Exibir blocoQ[i]
+	   FIMSE
+	FIMPARA
+	
+Fim
